@@ -1,7 +1,7 @@
 {
-  "name": "facemash-backend",
+  "name": "hash-backend",
   "version": "1.0.0",
-  "description": "Facemash backend",
+  "description": "Hash backend",
   "main": "index.js",
   "scripts": {
     "dev:build": "webpack -w --mode development",
