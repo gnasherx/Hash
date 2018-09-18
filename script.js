@@ -36,18 +36,18 @@ document.getElementById('signin_submit').onclick = function (e) {
 
     console.log(signin_email, signin_password)
 
-    // fetch('http://localhost:8000/api/login', {
-    //     method: 'post',
-    //     headers: {
-    //         'Accept': 'application/json, text/plain, */*',
-    //         'Content-Type': 'application/json'
-    //     },
-    //     body: JSON.stringify({
-    //         email: signin_email,
-    //         password: signin_password
-    //     })
-    // }).then(res=>res.json())
-    //     .then(res => console.log(res));
+    fetch('http://localhost:8000/api/login', {
+        method: 'post',
+        headers: {
+            'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            email: signin_email,
+            password: signin_password
+        })
+    }).then(res=>res.json())
+        .then(res => console.log(res));
 
 
 };
