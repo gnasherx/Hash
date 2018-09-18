@@ -18,7 +18,11 @@ document.getElementById('signin_submit').onclick = function (e) {
             password: signin_password
         })
     }).then(res=>res.json())
-        .then(res => console.log(res));
+        .then(res => {
+            console.log(res);
+            window.location = 'https://gnasherx.github.io/Hash/home.html';
+        });
+
 
     e.preventDefault();
 };
