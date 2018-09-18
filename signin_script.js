@@ -1,11 +1,11 @@
 document.getElementById('signin_submit').onclick = function (e) {
-    e.preventDefault();
+
 
     // gets data from input text
     var signin_email = document.getElementById('signin_email').value;
     var signin_password = document.getElementById('signin_password').value;
 
-    console.log(signin_email, signin_password)
+    console.log(signin_email, signin_password);
 
     fetch('http://localhost:8000/api/login', {
         method: 'post',
@@ -20,5 +20,5 @@ document.getElementById('signin_submit').onclick = function (e) {
     }).then(res=>res.json())
         .then(res => console.log(res));
 
-
+    e.preventDefault();
 };
